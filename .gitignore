@@ -1,0 +1,12 @@
+# OS / editor cruft
+.DS_Store
+Thumbs.db
+*~
+.vscode/
+.idea/
+
+# Build / export artefacts (if you later convert with Pandoc/Typst/Quarto)
+*.pdf
+*.docx
+/_build/
+/output/
