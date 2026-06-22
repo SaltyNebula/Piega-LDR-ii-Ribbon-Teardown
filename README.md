@@ -4,7 +4,7 @@ A full teardown of a **Piega LDR II ribbon tweeter** (Linear Drive Ribbon, gener
 
 > **Provenance:** Piega P 4 XL MK II — a 3-way Swiss bass-reflex floorstander of the early 2000s, rated 89 dB / 4 Ω. "DC / direct-coupled" appears in this writeup as a working description of the driver's no-transformer operation, not as Piega's designation.
 
-![Diaphragm, radiating face](figures/diaphragm-front.png)
+![Diaphragm, radiating face](figures/piega_ldrii_front(dslr))
 
 ## Summary
 
