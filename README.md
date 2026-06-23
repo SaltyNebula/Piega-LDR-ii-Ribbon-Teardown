@@ -1,4 +1,4 @@
-# Piega LDR II Ribbon — Teardown & Reverse-Engineering Analysis
+# Piega LDR II Ribbon; Teardown & Reverse-Engineering Analysis
 
 A full teardown of a **Piega LDR II ribbon tweeter** (Linear Drive Ribbon, generation II), salvaged from a pair of **Piega P 4 XL MK II** floorstanders acquired second-hand via Ricardo. Despite the "ribbon" name, the driver is a **planar-magnetic** design. This writeup maps its construction, explains how it works, diagnoses why the salvaged unit measured poorly, and draws design lessons for original planar drivers.
 
