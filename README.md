@@ -56,3 +56,7 @@ data/
 ## License
 
 Text, figures, and data are released under **[CC BY 4.0](LICENSE)**; reuse freely with attribution.
+
+## Documentation note
+
+The work and conclusions in this repository are my own. I used an AI assistant as a writing aid to draft and structure these reports from my raw notes.
