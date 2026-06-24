@@ -50,8 +50,9 @@ Full measurements and raw sweeps: **[data/measurements.md](data/measurements.md)
 ## Repository structure
 
 ```
-report/    full teardown analysis
-figures/   scans, photographs, and measurement plots
+report/         full teardown analysis
+figures/        scans, photographs, and measurement plots
+femm/   FEMM magnetostatic study of the motor (field plots + summary)
 data/
   measurements.md   specifications + acoustic summary
   raw/              REW frequency-response and distortion exports (both units)
