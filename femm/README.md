@@ -47,7 +47,7 @@ This is a 2D model with an idealised conductor and geometry measured to roughly 
 
 ## Files
 
-Each topology has a B.t line plot (`*_bt`), a flux-density plot (`*_field`), and the model geometry (`*_drawing`):
+Each topology has a B.t line plot (`*_btplot`), a flux-density plot (`*_field`), and the model geometry (`*_drawing`):
 
 - single-ended baseline (also the N35/N42/N52 grade sweep)
 - mirrored / push-pull
