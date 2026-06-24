@@ -86,7 +86,7 @@ Measured terminal resistance is **2.8 Ω**, confirmed both at the external termi
 
 One inefficiency stands out. The **active** trace area is only 25.8 × 41.8 mm, but the trace pattern occupies the full ≈ 81 × 41 mm footprint. The extra area is **bus routing**, the wiring that carries current to and from the active loops, and it sits *on the moving membrane*, where it adds series resistance and moving mass while producing no sound. This is a design point worth improving on (Section 10).
 
-![Diaphragm front, trace pattern backlit](../figures/diaphragm-front.png)
+![Diaphragm front, trace pattern backlit](../figures/ldrii_diaphragm-front.png)
 *Figure 3: Diaphragm front (radiating face), trace pattern backlit.*
 
 ---
