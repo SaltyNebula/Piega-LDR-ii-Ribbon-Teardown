@@ -39,10 +39,10 @@ The driver is a direct-coupled (**2.8 Ω**) planar-magnetic tweeter: an aluminis
 | DC resistance | 2.8 Ω |
 | Coil | Two concentric spirals, wired in parallel |
 | Active area | 25.8 × 41.8 mm |
-| Magnets | 3 × NdFeB bars, ~50×10×5 mm, ~5 mm apart, N-S-N |
+| Magnets | 3 × NdFeB bars, 50×10×5 mm, 5 mm apart, N-S-N |
 | Motor | Single-ended, steel rear yoke + steel front plate |
 | Diaphragm | Aluminised Kapton, conductor-side outward, ~7 µm / ~7 mg |
-| Air gap | ~1.6 mm (rubber spacer) |
+| Air gap | ~2 mm (rubber spacer and FR board) |
 | In-band THD (≥ 3.5 kHz) | median ~0.2 to 0.4 % |
 
 Full measurements and raw sweeps: **[data/measurements.md](data/measurements.md)**
