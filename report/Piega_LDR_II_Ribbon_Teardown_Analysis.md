@@ -19,6 +19,7 @@ Throughout this writeup the driver is described as *direct-coupled* ("DC"): a wo
 
 ![Diaphragm conductor side above its magnet plate](../figures/ldrii_diaphragm-back.png)
 *Figure 1: Diaphragm (conductor side) above its magnet plate.*
+
 ---
 
 ## 2. The operating principle
@@ -45,7 +46,7 @@ The advantage of the planar layout is that the driving force is applied **across
 
 
 ![Split view of driver](../figures/ldrii_n_split.png)
-*Figure 1: Split view of driver with textured components.*
+*Figure 3: Split view of driver with textured components.*
 
 From the listening side inward, the driver is a simple sandwich:
 
@@ -58,11 +59,11 @@ From the listening side inward, the driver is a simple sandwich:
 | Spacer / gasket (magnet side) | Hard rubber | ≈ 1.5 mm |
 | Magnets | 3 × neodymium bars | each ≈ 50 × 10 × 5 mm, ≈ 5 mm apart |
 | Rear yoke | Soft steel plate joining all three magnets | ≈ 5 mm |
-| Damping | Felt | thin |
+| Damping | Reclaimed-Felt | thin |
 
 The full internal cavity is roughly **81 × 41 mm**, but the **active radiating area is only 25.8 × 41.8 mm**: a point we return to in the design notes, because the difference is mostly "dead" area.
 
-A striking feature is how *little* adhesive the whole thing uses. The inter-magnet gaps and the spaces above and below the magnets are filled with **removable felt** (acoustic damping, not structural potting). There are really only **two glued joints in the entire driver**: the magnets bonded to the steel yoke, and the Kapton bonded to its frame. Everything else is mechanical assembly held together by four screws. The diaphragm's carrier frame is a **translucent fibreboard that looks like FR-grade (glass-fibre/epoxy) laminate**: a common workshop material, not a proprietary moulding.
+A striking feature is how *little* adhesive the whole thing uses. The inter-magnet gaps are filled with **felt**, and the spaces above and below the magnets are filled with **removable granulate end blocks** (for acoustic damping, not structural potting). There are really only **two glued joints in the entire driver**: the magnets bonded to the steel yoke, and the Kapton bonded to its frame. Everything else is mechanical assembly held together by four screws. The diaphragm's carrier frame is a **translucent fibreboard that looks like FR-grade (glass-fibre/epoxy) laminate**: a common workshop material, not a proprietary moulding.
 
 ---
 
@@ -75,7 +76,7 @@ The three bars are arranged in **alternating polarity, N-S-N**. This was confirm
 Single-ended is the right choice *for a tweeter*. The membrane barely moves, so the fact that the field weakens with distance from the magnets (which would normally cause distortion as the diaphragm swings in and out of a stronger or weaker field) simply doesn't have room to express itself. The reasons to add magnets on *both* sides are covered in the design notes.
 
 ![FEMM motor reconstruction](../femm/ldrii_singleended_n35_drawing.png)
-*Figure 3: Alternating N-S-N bar magnets and yoke designed in FEMM(1018 steel is used as a placeholder). (The motor is also visible in Figure 1.)*
+*Figure 4: Alternating N-S-N bar magnets and yoke designed in FEMM(1018 steel is used as a placeholder). (The motor is also visible in Figure 1.)*
 
 ---
 
@@ -92,7 +93,7 @@ Measured terminal resistance is **2.8 Ω**, confirmed both at the external termi
 One inefficiency stands out. The **active** trace area is only 25.8 × 41.8 mm, but the trace pattern occupies the full ≈ 81 × 41 mm footprint. The extra area is **bus routing**, the wiring that carries current to and from the active loops, and it sits *on the moving membrane*, where it adds series resistance and moving mass while producing no sound. This is a design point worth improving on (Section 10).
 
 ![Diaphragm front, trace pattern backlit](../figures/ldrii_diaphragm-front.png)
-*Figure 3: Diaphragm front (radiating face), trace pattern backlit.*
+*Figure 5: Diaphragm front (radiating face), trace pattern backlit.*
 
 ---
 
@@ -135,7 +136,7 @@ That one mechanism does two separate things to the driver:
 By the end, the corrosion had gone clean through: the bars had separated along their own corroded planes top and bottom, so the magnets lifted away with almost no force, leaving the *adhesive* perfectly intact. The driver didn't fail at any joint a designer chose; it failed inside the magnet metal itself, after the better part of two decades of slow, passive corrosion.
 
 ![MAgnet view with peeling coating](../figures/ldrii_magnet_dslr.jpg)
-*Figure 4: Lifted plating crust on the magnet faces, most severe on the centre bar. (Visible in Figure 1.)*
+*Figure 6: Lifted plating crust on the magnet faces, most severe on the centre bar. (Visible in Figure 1.)*
 
 ---
 
@@ -148,12 +149,12 @@ Two pre-teardown sweeps survive for each of the two units (frequency response an
 **Frequency response matches the crossover.** Both units roll in with a natural minus-3 dB knee at **about 2.7 kHz** and are essentially flat from roughly 3 kHz to 20 kHz. Piega's 3.5 kHz crossover therefore sits about a third of an octave *above* the driver's natural knee, which is textbook tweeter integration: you place the electrical high-pass a little above the acoustic roll-off so the two combine into a clean slope and the driver only ever works where it is flat. The two units track each other almost exactly through the whole passband, which is notable for two roughly 20-year-old, differently-corroded samples. A deep, narrow notch near 1.2 kHz is present and near-identical in *both* units, which marks it as a genuine shared feature (diaphragm behaviour below the passband, or a common measurement artifact) rather than damage to one unit; either way it sits well below the crossover and is irrelevant to use.
 
 ![Frequency response, both units, with the 3.5 kHz crossover cursor](../figures/ldrii_fr_rew.png)
-*Figure 5: Frequency response of both units (1/24-octave). The cursor at 3.5 kHz sits right on the knee where the response steps up onto its plateau.*
+*Figure 7: Frequency response of both units (1/24-octave). The cursor at 3.5 kHz sits right on the knee where the response steps up onto its plateau.*
 
 **Distortion is low where it counts.** In the real passband (at and above 3.5 kHz), total harmonic distortion is excellent: a median of about **0.2 to 0.4 %**, with peaks barely reaching 1 to 2 %. The alarming part of the raw data, distortion of 45 % to 170 % below 1.5 kHz, is **not the driver tearing itself apart**. It is the standard artifact of measuring a tweeter below its passband: the fundamental collapses down there because the driver cannot radiate it, while that tone's 2nd and 3rd harmonics land back up at 2 to 5 kHz where the driver *is* efficient, so the ratio of harmonics to fundamental explodes. All of that is below the 3.5 kHz crossover, so the speaker never lets the driver make it.
 
 ![Harmonic distortion, with the crossover cursor](../figures/ldrii_thd_rew.png)
-*Figure 6: Distortion. Above the crossover the harmonic traces fall toward the noise floor; below it the fundamental rolls off while harmonics remain in band, which is the out-of-band artifact, not a fault.*
+*Figure 8: Distortion. Above the crossover the harmonic traces fall toward the noise floor; below it the fundamental rolls off while harmonics remain in band, which is the out-of-band artifact, not a fault.*
 
 **Why the original impression was misleading.** The first reading of these sweeps, a year before the teardown, took that out-of-band distortion as evidence of a fault. The misread came from a woofer habit of mind: a woofer is the unusual driver that plays cleanly across nearly its whole range, so huge distortion at the bottom of a sweep genuinely signals trouble there. A tweeter measured below its crossover always looks like that. So the "weird response and high distortion" that first prompted this investigation was really two things: genuinely reduced output (the sensitivity loss from Section 8) and a normal below-passband artifact misread against woofer expectations. The teardown then revealed the real, dramatic fault, which was magnetic, not a distortion problem.
 
