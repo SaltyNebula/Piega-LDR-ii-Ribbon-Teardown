@@ -19,7 +19,6 @@ Throughout this writeup the driver is described as *direct-coupled* ("DC"): a wo
 
 ![Diaphragm conductor side above its magnet plate](../figures/ldrii_diaphragm-back.png)
 *Figure 1: Diaphragm (conductor side) above its magnet plate.*
-
 ---
 
 ## 2. The operating principle
@@ -43,6 +42,10 @@ The advantage of the planar layout is that the driving force is applied **across
 
 ![Techincal Assembly drawing of internals](../figures/ldrii_assembly_drawing.png)
 *Figure 2: dimensioned assembly section (see also figures/ldrii_assembly_drawing.pdf)*
+
+
+![Split view of driver](../figures/ldrii_n_split.png)
+*Figure 1: Split view of driver with textured components.*
 
 From the listening side inward, the driver is a simple sandwich:
 
