@@ -59,11 +59,11 @@ From the listening side inward, the driver is a simple sandwich:
 | Spacer / gasket (magnet side) | Hard rubber | ≈ 1.5 mm |
 | Magnets | 3 × neodymium bars | each ≈ 50 × 10 × 5 mm, ≈ 5 mm apart |
 | Rear yoke | Soft steel plate joining all three magnets | ≈ 5 mm |
-| Damping | Reclaimed-Felt | thin |
+| Damping | Felt | thin |
 
 The full internal cavity is roughly **81 × 41 mm**, but the **active radiating area is only 25.8 × 41.8 mm**: a point we return to in the design notes, because the difference is mostly "dead" area.
 
-A striking feature is how *little* adhesive the whole thing uses. The inter-magnet gaps are filled with **felt**, and the spaces above and below the magnets are filled with **removable granulate end blocks** (for acoustic damping, not structural potting). There are really only **two glued joints in the entire driver**: the magnets bonded to the steel yoke, and the Kapton bonded to its frame. Everything else is mechanical assembly held together by four screws. The diaphragm's carrier frame is a **translucent fibreboard that looks like FR-grade (glass-fibre/epoxy) laminate**: a common workshop material, not a proprietary moulding.
+A striking feature is how *little* adhesive the whole thing uses. The inter-magnet gaps are filled with **felt**, and the spaces above and below the magnets are filled with **removable granulate end blocks**. There are really only **two glued joints in the entire driver**: the magnets bonded to the steel yoke, and the Kapton bonded to its frame. Everything else is mechanical assembly held together by four screws. The diaphragm's carrier frame is a **translucent fibreboard that looks like FR-grade (glass-fibre/epoxy) laminate**: a common workshop material, not a proprietary moulding.
 
 ---
 
