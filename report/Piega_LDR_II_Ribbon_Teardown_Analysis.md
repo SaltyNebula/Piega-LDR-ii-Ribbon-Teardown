@@ -181,6 +181,17 @@ Reverse-engineering this driver surfaces several improvements worth carrying int
 
 **Design for corrosion from day one.** The only long-term failure mode here was magnet corrosion, and standard plating clearly isn't permanent. More robust protection (epoxy- or parylene-coated magnets, or sealing the finished motor) extends service life. One specific caution: never use **acetoxy-cure ("vinegar smell") silicone** anywhere near neodymium magnets. It off-gasses acetic acid as it cures and actively accelerates the exact corrosion seen here; use neutral or oxime-cure silicone, or epoxy, instead.
 
+**The topology choices, quantified.** A 2D magnetostatic model (FEMM) of the motor cross-section puts numbers on the points above, measuring the force-producing in-plane field (B.t) at the conductor plane across a 2.0 mm gap on N35 magnets:
+
+| Topology | Peak B.t |
+|---|---|
+| Push-pull (magnets both sides) | ~0.65 T |
+| Single-ended (this driver) | ~0.38 T |
+| Partial steel cage | ~0.25 T |
+| Full steel cage | ~0.18 T |
+
+Three things fall out. Magnet **grade** is a modest lever (N35 to N52 buys about 20%, the remanence ratio). **Push-pull** is the big one, roughly doubling the field. And a ferrous **return path wrapped around the array backfires**: more steel gives *less* useful field, because the iron offers the flux a low-reluctance loop that bypasses the gap, behaving as a keeper that collapses the field into the steel instead of across the gap. This is the quantitative case for the driver's actual design: an open, single-ended motor with a non-magnetic aluminium front avoids the keeper trap and provides ample field for a barely-moving tweeter. Full method, plots, and the grade sweep are in [`femm/`](../femm/).
+
 ---
 
 ## 11. A note on impedance and amplifier loading
