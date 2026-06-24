@@ -15,7 +15,7 @@ The driver is a direct-coupled (**2.8 Ω**) planar-magnetic tweeter: an aluminis
 ## Key findings
 
 - **It's a planar, not a ribbon.** Piega's **LDR II** is a 2.8 Ω etched aluminium trace on Kapton, driven directly with no matching transformer; hence the "direct-coupled" shorthand used here.
-- **Single-ended N-S-N motor.** Three ~50×10×5 mm neodymium bars, ~5 mm apart, alternating polarity (confirmed with a spare ferrite magnet), on a soft-steel yoke with a steel front plate completing the circuit.
+- **Single-ended N-S-N motor.** Three ~50×10×5 mm neodymium bars, ~5 mm apart, alternating polarity (confirmed with a spare ferrite magnet), on a soft-steel rear yoke; the aluminium front plate is non-magnetic (confirmed) and structural only, so the motor is purely single-ended.
 - **Parallel twin-spiral coil.** Two concentric spirals in parallel halve resistance and inductance, keeping the driver fast and easy to drive at the top of the band.
 - **Selective pleating.** Fine corrugation in a ~4-corrugated : 1-flat repeat; compliance tuned spatially for modal control, not uniform stiffening.
 - **Deliberate dummy traces.** ~8 unwired strips over the dead-field centre keep mass/stiffness uniform and the etch even.
@@ -40,7 +40,7 @@ The driver is a direct-coupled (**2.8 Ω**) planar-magnetic tweeter: an aluminis
 | Coil | Two concentric spirals, wired in parallel |
 | Active area | 25.8 × 41.8 mm |
 | Magnets | 3 × NdFeB bars, 50×10×5 mm, 5 mm apart, N-S-N |
-| Motor | Single-ended, steel rear yoke + steel front plate |
+| Motor | Single-ended, steel rear yoke; aluminium front plate (non-magnetic, structural) |
 | Diaphragm | Aluminised Kapton, conductor-side outward, ~7 µm / ~7 mg |
 | Air gap | ~2 mm (rubber spacer and FR board) |
 | In-band THD (≥ 3.5 kHz) | median ~0.2 to 0.4 % |
