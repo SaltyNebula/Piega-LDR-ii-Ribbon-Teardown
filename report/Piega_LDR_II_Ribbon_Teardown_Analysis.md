@@ -74,7 +74,8 @@ The three bars are arranged in **alternating polarity, N-S-N**. This was confirm
 
 Single-ended is the right choice *for a tweeter*. The membrane barely moves, so the fact that the field weakens with distance from the magnets (which would normally cause distortion as the diaphragm swings in and out of a stronger or weaker field) simply doesn't have room to express itself. The reasons to add magnets on *both* sides are covered in the design notes.
 
-*Figure 3: Alternating N-S-N bar magnets and rear plate. (The motor is also visible in Figure 1.)*
+![FEMM motor reconstruction](../femm/ldrii_singleended_n35_drawing.png)
+*Figure 3: Alternating N-S-N bar magnets and yoke designed in FEMM(1018 steel is used as a placeholder). (The motor is also visible in Figure 1.)*
 
 ---
 
