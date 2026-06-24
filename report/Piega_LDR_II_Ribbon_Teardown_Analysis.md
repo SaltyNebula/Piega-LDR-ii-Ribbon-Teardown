@@ -51,10 +51,11 @@ From the listening side inward, the driver is a simple sandwich:
 
 | Layer | Material | Approx. dimension |
 |---|---|---|
-| Front plate | Steel, with a rectangular window | 2 mm thick; opening ≈ 25.8 × 41.8 mm |
-| Spacer / gasket | Hard rubber | ≈ 1.6 mm (sets the air gap) |
-| Diaphragm | Aluminised Kapton on a fibreboard frame | conductor a few microns thick |
-| Air gap |  | ≈ 1.6 mm to the magnet faces |
+| Front plate | Aluminium, with a rectangular window (non-magnetic) | 2 mm thick; opening ≈ 25.8 × 41.8 mm |
+| Spacer / gasket (listener side) | Hard rubber | ≈ 1.5 mm |
+| Diaphragm | Aluminised Kapton, conductor-side outward | conductor a few microns thick |
+| Carrier frame | FR-type fibreboard, windowed (diaphragm bonded to its front face) | ≈ 0.5 mm |
+| Spacer / gasket (magnet side) | Hard rubber | ≈ 1.5 mm |
 | Magnets | 3 × neodymium bars | each ≈ 50 × 10 × 5 mm, ≈ 5 mm apart |
 | Rear yoke | Soft steel plate joining all three magnets | ≈ 5 mm |
 | Damping | Felt | thin |
@@ -67,7 +68,7 @@ A striking feature is how *little* adhesive the whole thing uses. The inter-magn
 
 ## 4. The motor (magnet system)
 
-Three neodymium bar magnets sit *behind* the diaphragm; none on the sides, none on the front. This is a **single-ended** magnet system. A soft-steel **yoke** behind the magnets ties them together magnetically and provides a return path for the field; the steel front plate completes the magnetic circuit on the other side and adds shielding and structure.
+Three neodymium bar magnets sit *behind* the diaphragm; none on the sides, none on the front. This is a **single-ended** magnet system. A soft-steel yoke behind the magnets ties them together magnetically and provides the field's return path. The front plate is aluminium (confirmed non-magnetic with a ferrite magnet), so it takes no part in the magnetic circuit; it is structure and protection only. The motor is therefore purely single-ended off the rear yoke, with nothing magnetic in front of the diaphragm.
 
 The three bars are arranged in **alternating polarity, N-S-N**. This was confirmed without any specialist tools: presenting the same face of a spare ferrite magnet to each bar in turn, the two outer bars *attracted* it while the middle bar *repelled* it. Alternating polarity is what makes the motor work. Between two oppositely-poled bars, the magnetic field runs **horizontally across the gap**, parallel to the diaphragm, and it is that in-plane field that produces useful (perpendicular) force on the conductors running over the gaps. Over the centre of each bar the field points straight up, which does **not** drive the membrane outward; only the gap regions do real work. The serpentine/spiral trace pattern is laid out so the current direction reverses from one gap to the next, matching the alternating field so all the forces add.
 
@@ -128,7 +129,7 @@ Neodymium (NdFeB) magnets corrode readily, so they are plated, typically nickel-
 That one mechanism does two separate things to the driver:
 
 1. **Magnetic (the dominant audible effect).** The corrosion ate into the working faces of the magnets and converted magnet material into magnetically **dead oxide**. The field **B** in the gap fell, **BL** fell with it, and the driver lost sensitivity. This is the real, measurable signature of the fault, and it matches the recollection that these "90 dB-ish" drivers played audibly quiet.
-2. **Mechanical.** The crust grew **taller than the 1.6 mm air gap** and pressed against the back of the diaphragm, jacking it up off its rest position and reducing its clearance (worst opposite the centre magnet, which was the most corroded). The driver felt strangely "over-tensioned" by hand; it was actually jammed. Importantly, this did *not* translate into gross distortion in the driver's passband, for the reason given in Section 9: a tweeter's in-band excursion is so small that a shifted rest position has very little room to misbehave.
+2. **Mechanical.** The crust grew tall enough to bridge the ~2 mm gap and pressed against the diaphragm, jacking it up off its rest position and reducing its clearance (worst opposite the centre magnet, which was the most corroded). The driver felt strangely "over-tensioned" by hand; it was actually jammed. Importantly, this did *not* translate into gross distortion in the driver's passband, for the reason given in Section 9: a tweeter's in-band excursion is so small that a shifted rest position has very little room to misbehave.
 
 By the end, the corrosion had gone clean through: the bars had separated along their own corroded planes top and bottom, so the magnets lifted away with almost no force, leaving the *adhesive* perfectly intact. The driver didn't fail at any joint a designer chose; it failed inside the magnet metal itself, after the better part of two decades of slow, passive corrosion.
 
@@ -210,7 +211,7 @@ The practical takeaway is that the common "3.5 Ω minimum" rule of thumb is real
 Stripped to its essentials, the Piega LDR II is:
 
 - a **planar-magnetic** driver (marketed as a ribbon), **direct-coupled** at 2.8 Ω;
-- driven by a **single-ended, alternating-polarity (N-S-N)** array of three neodymium bars on a steel yoke, with a steel front plate completing the magnetic circuit;
+- driven by a **single-ended, alternating-polarity (N-S-N)** array of three neodymium bars on a steel rear yoke, with an aluminium (non-magnetic) front plate that is structural only;
 - using an **aluminised-Kapton** membrane carrying **two parallel spirals**, **selectively pleated** for modal control, with **dummy strips** over the dead centre for uniform mass and even etching;
 - assembled almost entirely **mechanically**, with felt damping and just two glued joints, on an **FR-type fibreboard** frame.
 
