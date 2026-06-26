@@ -1,8 +1,8 @@
-# Piega LDR II Ribbon: Teardown & Reverse-Engineering Analysis
+# Piega LDR II Ribbon Tweeter: Teardown & Reverse-Engineering
 
-A full teardown of a **Piega LDR II ribbon tweeter** (Linear Drive Ribbon, generation II), salvaged from a pair of **Piega P 4 XL MK II** floorstanders acquired second-hand via Ricardo. Despite the "ribbon" name, the driver is a **planar-magnetic** design. This writeup maps its construction, explains how it works, diagnoses the fault in the salvaged units, and draws design lessons for original planar drivers.
+I took apart a high-end Swiss ribbon tweeter that had quietly died after about twenty years, worked out exactly what killed it, modelled its magnetics from scratch, and figured out how I would build it better. This is the full writeup.
 
-> **Provenance:** Piega P 4 XL MK II, a 3-way Swiss bass-reflex floorstander of the early 2000s, rated 89 dB / 4 Ω. "DC / direct-coupled" appears in this writeup as a working description of the driver's no-transformer operation, not as Piega's designation.
+The short version: despite being sold as a "ribbon," it is actually a **planar-magnetic** driver, a wafer-thin plastic film with an etched metal coil, suspended just above a row of magnets. It died of an unusual and oddly satisfying failure. The magnets corroded so slowly and so evenly over two decades that they lifted their own protective plating off like a scab, which both starved the magnetic field and physically jammed the moving film. The measurements confirm it: in the frequency range it actually plays, even the dead units still measure clean, so the damage cost loudness, not sound quality.
 
 ![Driver front](figures/ldrii_front_dslr.jpg)
 
@@ -10,6 +10,7 @@ A full teardown of a **Piega LDR II ribbon tweeter** (Linear Drive Ribbon, gener
 
 The driver is a direct-coupled (**2.8 Ω**) planar-magnetic tweeter: an aluminised-Kapton membrane carrying two parallel etched spirals, driven by a **single-ended, alternating-polarity (N-S-N)** array of three neodymium bar magnets on a steel yoke. The salvaged units played quiet, and the fault is **oxide jacking**: corrosion of the neodymium magnets lifting their plating into a hard crust that ate the magnetic field (cutting sensitivity) and jammed the diaphragm off its rest position. The measurements show the consequence clearly: in its real passband (above the ~3.5 kHz crossover) even these aged units are flat and clean, so the damage cost *output*, not in-band distortion. The alarming distortion seen below the crossover is the normal below-passband artifact, not a fault.
 
+> **Provenance.** Salvaged from a pair of **Piega P 4 XL MK II** floorstanders (a 3-way Swiss bass-reflex design of the early 2000s, 89 dB / 4 Ω), acquired second-hand via Ricardo. "DC / direct-coupled" is used here as a working description of the driver's no-transformer operation, not as Piega's designation.
 
 
 ## Key findings
